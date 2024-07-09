@@ -1,0 +1,94 @@
+.about-me-section {
+  background-color: #323f4b;
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.about-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+@media screen and (min-width: 768px) {
+  .about-container {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.about-me-facts-heading {
+  color: #cced00;
+  margin-bottom: 15px;
+  font-size: 24px;
+  margin-bottom: 0px;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+  .about-me-facts-heading {
+    font-size: 36px;
+  }
+}
+
+.about-heading {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-top: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-heading {
+    font-size: 36px;
+  }
+}
+
+.mobile-about-me-image {
+  width: 90%;
+  border-radius: 40px;
+}
+@media screen and (min-width: 768px) {
+  .mobile-about-me-image {
+    display: none;
+  }
+}
+
+.desktop-about-me-image {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .desktop-about-me-image {
+    width: 50%;
+    display: block;
+    border-radius: 40px;
+  }
+}
+
+.about-me-description {
+  color: #9aa5b1;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+  .about-me-description {
+    font-size: 20px;
+  }
+}
+
+.mobile-about-me-container {
+  padding: 40px;
+  font-family: 'Roboto';
+}
+@media screen and (min-width: 768px) {
+  .mobile-about-me-container {
+    width: 50%;
+  }
+}
