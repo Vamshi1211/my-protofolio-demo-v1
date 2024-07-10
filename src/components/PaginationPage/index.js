@@ -21,7 +21,7 @@ const PaginationPage = props => {
       `User requested page number ${event.selected}, which is offset ${newOffset}`,
     )
     setItemOffset(newOffset)
-    setPageNumber(prevState => prevState + 1)
+    setPageNumber(event.selected + 1)
   }
 
   return (

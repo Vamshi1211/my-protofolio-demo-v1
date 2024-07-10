@@ -31,7 +31,7 @@
   padding-bottom: 40px;
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
+  padding-left: 20px;
 }
 
 .select-container {
