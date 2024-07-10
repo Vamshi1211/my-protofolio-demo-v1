@@ -12,7 +12,6 @@
 .about-container {
   width: 90%;
   max-width: 1100px;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
 }

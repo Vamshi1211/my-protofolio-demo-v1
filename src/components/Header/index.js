@@ -11,7 +11,7 @@ import './index.css'
 const Header = () => {
   const [isButtonClicked, onButtonToggle] = useState(false)
 
-  const onButtonClicked = () => {
+  const onMenuButtonClicked = () => {
     onButtonToggle(prevState => !prevState)
   }
 
@@ -48,11 +48,11 @@ const Header = () => {
           <li className="nav-item">Services</li>
           <li className="nav-item">Contact Info</li>
         </ul>
-        <div className="mobile-menu-container">
+        <div className="mobile-container">
           <button
             type="button"
             className="trigger-button"
-            onClick={onButtonClicked}
+            onClick={onMenuButtonClicked}
           >
             <RxHamburgerMenu size={30} />.
           </button>
@@ -62,7 +62,9 @@ const Header = () => {
       {isButtonClicked && (
         <ul className="menu-list-container">
           <li className="menu-item" onClick={onClickMenuItem}>
-            Home
+            <AnchorLink href="#home" className="nav-link-item">
+              Home
+            </AnchorLink>
           </li>
           <li className="menu-item" onClick={onClickMenuItem}>
             <AnchorLink href="#about" className="nav-link-item">
@@ -70,7 +72,14 @@ const Header = () => {
             </AnchorLink>
           </li>
           <li className="menu-item" onClick={onClickMenuItem}>
-            Projects
+            <AnchorLink href="#skills" className="nav-link-item">
+              My Skills
+            </AnchorLink>
+          </li>
+          <li className="menu-item" onClick={onClickMenuItem}>
+            <AnchorLink href="#projects" className="nav-link-item">
+              Projects
+            </AnchorLink>
           </li>
           <li className="menu-item" onClick={onClickMenuItem}>
             My Works

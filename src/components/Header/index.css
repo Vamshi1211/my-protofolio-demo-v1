@@ -57,11 +57,11 @@
   color: #ffffff;
 }
 
-.mobile-menu-container {
+.mobile-container {
   display: block;
 }
 @media screen and (min-width: 768px) {
-  .mobile-menu-container {
+  .mobile-container {
     display: none;
   }
 }
@@ -84,9 +84,15 @@
   font-family: 'Roboto';
   border: none;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   padding: 10px;
   transition: all 0.8s;
+  position: fixed;
+  margin-top: 80px;
+  width: 100%;
+  padding-left: 60px;
+  transition: all 0.6s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 
 .menu-item {
@@ -94,6 +100,8 @@
   cursor: pointer;
   transition: all 0.8s;
   padding: 10px;
+  font-family: 'Roboto';
+  font-size: 12px;
 }
 .menu-item:hover {
   transform: scale(1.2);

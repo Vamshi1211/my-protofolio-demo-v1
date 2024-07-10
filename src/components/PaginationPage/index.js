@@ -28,7 +28,7 @@ const PaginationPage = props => {
     <>
       <ul className="list-container">
         {currentItems.map(eachItem => (
-          <ProjectItem eachProject={eachItem} key={eachItem.id} />
+          <ProjectItem eachProject={eachItem} key={eachItem.projectId} />
         ))}
       </ul>
       <div className="pagination-container">

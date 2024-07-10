@@ -4,13 +4,26 @@ const ProjectItem = props => {
   const {eachProject} = props
 
   return (
-    <li className="list-item-container">
+    <li className="project_card">
       <img
-        src={eachProject.image_url}
-        alt={eachProject.name}
+        src={eachProject.imageURL}
+        alt={eachProject.title}
         className="project-image"
       />
-      <p className="project-name">{eachProject.name}</p>
+      <div className="project_card__content">
+        <p className="project_card__title">{eachProject.title}</p>
+        <p className="project_card__description">{eachProject.description}</p>
+        <a
+          href={eachProject.websiteUrl}
+          target="__blank"
+          className="project_card__button"
+        >
+          Live Demo
+        </a>
+        <a href="#skills" className="project_card__button secondary">
+          Source Code
+        </a>
+      </div>
     </li>
   )
 }

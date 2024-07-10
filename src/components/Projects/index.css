@@ -1,28 +1,37 @@
 .projects-main-container {
-  min-width: 100vh;
+  min-height: 100vh;
   background-color: #191a1d;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 40px;
 }
 
 .projects-heading {
   font-family: 'Roboto';
   color: #9aa5b1;
+  font-size: 28px;
+}
+@media screen and (min-width: 768px) {
+  .projects-heading {
+    font-size: 36px;
+  }
 }
 
 .projects-container {
   width: 90%;
   max-width: 1200px;
+  display: flex;
+  flex-direction: column;
 }
 
 .app-container {
-  width: 85%;
-  margin: auto;
+  width: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
   display: flex;
   flex-direction: column;
+  border: 1px solid red;
 }
 
 .select-container {
