@@ -6,7 +6,7 @@ const ProjectItem = props => {
   return (
     <li className="project_card">
       <img
-        src={eachProject.imageURL}
+        src={eachProject.imageUrl}
         alt={eachProject.title}
         className="project-image"
       />
