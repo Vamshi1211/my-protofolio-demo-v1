@@ -5,10 +5,15 @@
   align-items: center;
   padding-left: 60px;
   padding-right: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border: none;
+  position: fixed;
+  width: 100%;
+  height: 10vh;
 }
 .navbar-icon {
-  padding: 15px;
+  padding: 8px 16px 8px 16px;
   border-color: #4b6cc1;
   color: #ffffff;
   font-family: 'Roboto';

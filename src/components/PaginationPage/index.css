@@ -1,0 +1,49 @@
+.list-container {
+  padding-left: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+#container {
+  margin: 1rem;
+}
+
+.items {
+  margin-bottom: 1rem;
+}
+
+.pagination {
+  list-style-type: none;
+}
+
+.page-item {
+  padding: 8px;
+  font-family: 'Roboto';
+  line-height: 1.5;
+  color: #475569;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #c9c8c7;
+  border-radius: 4px;
+}
+.page-number-item {
+  font-family: 'Roboto';
+  line-height: 1.5;
+  color: #475569;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.page-link {
+  padding: 8px;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

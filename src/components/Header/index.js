@@ -1,6 +1,11 @@
 import {useState} from 'react'
-import {Link} from 'react-router-dom'
 import {RxHamburgerMenu} from 'react-icons/rx'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+
+import Home from '../Home'
+import About from '../About'
+import Skills from '../Skills'
+import Projects from '../Projects'
 import './index.css'
 
 const Header = () => {
@@ -20,16 +25,25 @@ const Header = () => {
         <p className="navbar-icon">V.</p>
         <ul className="desktop-nav-items">
           <li className="nav-item">
-            <Link to="/" className="nav-link-item">
+            <AnchorLink href="#home" className="nav-link-item">
               Home
-            </Link>
+            </AnchorLink>
           </li>
           <li className="nav-item">
-            <Link to="/about" className="nav-link-item">
+            <AnchorLink href="#about" className="nav-link-item">
               About
-            </Link>
+            </AnchorLink>
           </li>
-          <li className="nav-item">Projects</li>
+          <li className="nav-item">
+            <AnchorLink href="#skills" className="nav-link-item">
+              My Skills
+            </AnchorLink>
+          </li>
+          <li className="nav-item">
+            <AnchorLink href="#projects" className="nav-link-item">
+              Projects
+            </AnchorLink>
+          </li>
           <li className="nav-item">My Works</li>
           <li className="nav-item">Services</li>
           <li className="nav-item">Contact Info</li>
@@ -51,7 +65,9 @@ const Header = () => {
             Home
           </li>
           <li className="menu-item" onClick={onClickMenuItem}>
-            About
+            <AnchorLink href="#about" className="nav-link-item">
+              About
+            </AnchorLink>
           </li>
           <li className="menu-item" onClick={onClickMenuItem}>
             Projects
@@ -67,6 +83,18 @@ const Header = () => {
           </li>
         </ul>
       )}
+      <section id="home">
+        <Home />
+      </section>
+      <section id="about">
+        <About />
+      </section>
+      <section id="skills">
+        <Skills />
+      </section>
+      <section id="projects">
+        <Projects />
+      </section>
     </>
   )
 }
