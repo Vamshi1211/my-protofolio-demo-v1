@@ -13,6 +13,12 @@ const ProjectItem = props => {
       <div className="project_card__content">
         <p className="project_card__title">{eachProject.title}</p>
         <p className="project_card__description">{eachProject.description}</p>
+        {eachProject.category === 'REACT' && (
+          <>
+            <p className="project_card__description">username: rahul</p>
+            <p className="project_card__description">password: rahul@2021</p>
+          </>
+        )}
         <a
           href={eachProject.websiteUrl}
           target="__blank"

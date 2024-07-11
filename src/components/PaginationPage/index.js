@@ -40,7 +40,7 @@ const PaginationPage = props => {
           nextLabel=">"
           onPageChange={handlePageClick}
           pageRangeDisplayed={2}
-          marginPagesDisplayed={1}
+          marginPagesDisplayed={0}
           pageCount={pageCount}
           previousLabel="<"
           renderOnZeroPageCount={null}

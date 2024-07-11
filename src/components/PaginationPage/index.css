@@ -1,9 +1,9 @@
 .list-container {
-  padding-left: 0px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 40px;
+  padding-top: 30px;
+  box-shadow: 2px 2px 12px hsla(0, 4%, 80%, 0.541);
 }
 
 .items {
@@ -11,36 +11,73 @@
 }
 
 .pagination {
+  display: flex;
   list-style-type: none;
+  padding-left: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .pagination {
+    justify-content: center;
+  }
 }
 
 .page-item {
-  padding: 8px;
+  padding: 6px;
   font-family: 'Roboto';
   line-height: 1.5;
   color: #475569;
   text-align: center;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 12px;
   cursor: pointer;
   border: 1px solid #c9c8c7;
   border-radius: 4px;
+  margin-left: 0px;
 }
+
+@media screen and (min-width: 768px) {
+  .page-item {
+    padding: 8px;
+    font-size: 16px;
+  }
+}
+
 .page-number-item {
   font-family: 'Roboto';
   line-height: 1.5;
   color: #475569;
   text-align: center;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 12px;
+  margin-right: 10px;
+}
+@media screen and (min-width: 768px) {
+  .page-number-item {
+    font-size: 16px;
+    margin-right: 25px;
+  }
 }
 
 .page-link {
-  padding: 8px;
+  padding: 6px;
+}
+@media screen and (min-width: 768px) {
+  .page-link {
+    padding: 8px;
+  }
 }
 
 .pagination-container {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.active {
+  background-color: #cecece;
+}
+
+.page-item:hover {
+  background-color: #adacad;
 }

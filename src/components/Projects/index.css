@@ -7,10 +7,24 @@
   padding-top: 40px;
 }
 
+.portfolio-heading {
+  color: #cced00;
+  margin-bottom: 0px;
+  font-family: 'Roboto';
+  font-size: 22px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-heading {
+    font-size: 26px;
+  }
+}
+
 .projects-heading {
   font-family: 'Roboto';
   color: #9aa5b1;
   font-size: 28px;
+  margin-top: 15px;
+  margin-bottom: 0px;
 }
 @media screen and (min-width: 768px) {
   .projects-heading {
@@ -42,6 +56,7 @@
   outline: none;
   cursor: pointer;
   border-radius: 8px;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
   .select-container {
@@ -94,9 +109,4 @@
   border: none;
   border-radius: 8px;
   padding: 10px 24px 10px 24px;
-}
-
-.pagination {
-  display: flex;
-  justify-content: center;
 }

@@ -12,6 +12,50 @@ const categoriesList = [
 
 const projectsList = [
   {
+    projectId: 23,
+    category: 'REACT',
+    categoryId: 'ALL',
+    imageUrl:
+      'https://res.cloudinary.com/dxs4gnnbs/image/upload/v1719038922/netfilx_1_gjmd4x.png',
+    title: 'Movies App (Netflix/Amazon Prime Clone)',
+    description:
+      'Implemented responsive OTT platform app like Netflix/Amazon Clone where users can see movies like popular, trending, top-rated, and also can search movies and view specific movie details',
+    websiteUrl: 'https://vgpmoviesapp.ccbp.tech',
+  },
+  {
+    projectId: 24,
+    category: 'REACT',
+    categoryId: 'ALL',
+    imageUrl:
+      'https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png',
+    title: 'Nxt Trendz (ECommerce Clone - Amazon, Flipkart)',
+    description:
+      'Implemented Nxt Trendz application which is a clone for ECommerce applications like Amazon, Flipkart where users can login and can see list of products with search, filters, sort by, etc..',
+    websiteUrl: 'https://vgpcartfeature.ccbp.tech',
+  },
+
+  {
+    projectId: 25,
+    category: 'REACT',
+    categoryId: 'ALL',
+    imageUrl: 'https://assets.ccbp.in/frontend/react-js/logo-img.png',
+    title: 'Jobby App',
+    description:
+      'Implemented Jobby App where users can log in and can see a list of jobs with search by Job title, filters based on Salary range and Employment type, etc',
+    websiteUrl: 'https://vgpjobbyapp.ccbp.tech',
+  },
+  {
+    projectId: 26,
+    category: 'REACT',
+    categoryId: 'ALL',
+    imageUrl:
+      'https://res.cloudinary.com/dxs4gnnbs/image/upload/v1720725106/cowin-logo_bczhiy.png',
+    title: 'Cowin Dashboard',
+    description:
+      'Implemented Cowin Dashboard by using the third party package recharts and can see the fetched data from API call',
+    websiteUrl: 'https://vpgcowindata.ccbp.tech',
+  },
+  {
     projectId: 0,
     category: 'STATIC',
     categoryId: 'ALL',
@@ -100,7 +144,7 @@ const projectsList = [
     imageUrl: 'https://assets.ccbp.in/frontend/react-js/projects-r4-img.png',
     title: 'VR Website',
     description:
-      'VR Website enables users to explore AR and VR Products and Industry happenings.',
+      'Developed a responsive website of VR products where users can see a list of products, detailed information about a product and trending blogs, contact us info.',
     websiteUrl: 'https://vgpvrwebsite.ccbp.tech',
   },
   {
@@ -211,9 +255,9 @@ const projectsList = [
     categoryId: 'ALL',
     imageUrl:
       'https://assets.ccbp.in/frontend/dynamic-webapps/library-management-bg.png',
-    title: 'Library Management',
+    title: 'Online Book Store',
     description:
-      'Get a random books by an API based dynamic Web Application that generates a list of popular books based on country',
+      'Developed online bookstore which shows popular books for given words, a user also can limit the number of books he would like to see',
     websiteUrl: 'https://vgplibrarymana.ccbp.tech',
   },
   {
@@ -237,7 +281,7 @@ const projectsList = [
     websiteUrl: 'https://vgppeacetimer.ccbp.tech',
   },
   {
-    project: 22,
+    projectId: 22,
     category: 'DYNAMIC',
     categoryId: 'ALL',
     imageUrl:
@@ -276,7 +320,8 @@ class App extends Component {
     return (
       <div className="projects-main-container">
         <div className="projects-container">
-          <h1 className="projects-heading">Projects</h1>
+          <h1 className="portfolio-heading">Portfolio</h1>
+          <h1 className="projects-heading">Projects I have done</h1>
           <div className="app-container">
             <select className="select-container" onChange={this.onChangeSelect}>
               {categoriesList.map(eachItem => (
