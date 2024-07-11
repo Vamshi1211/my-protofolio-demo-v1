@@ -136,6 +136,49 @@ const projectsList = [
     projectId: 12,
     category: 'DYNAMIC',
     categoryId: 'ALL',
+    imageUrl:
+      'https://res.cloudinary.com/dxs4gnnbs/image/upload/v1720683031/todo_list_l63zrl.avif',
+    title: 'Todo Application',
+    description:
+      'Make a list of tasks you need to complete or things that you want to do',
+    websiteUrl: 'https://vgptodosapp.ccbp.tech',
+  },
+  {
+    project: 13,
+    category: 'DYNAMIC',
+    categoryId: 'ALL',
+    imageUrl:
+      'https://nkb-backend-otg-media-static.s3.ap-south-1.amazonaws.com/ccbp-dynamic-webapps/wiki-logo-img.png',
+    title: 'Wikipedia Search',
+    description:
+      'Get a search site by an API based dynamic web application that generates a list of search sites based on the user input',
+    websiteUrl: 'https://vgpwikisearch.ccbp.tech',
+  },
+  {
+    project: 14,
+    category: 'DYNAMIC',
+    categoryId: 'ALL',
+    imageUrl:
+      'https://res.cloudinary.com/dxs4gnnbs/image/upload/v1720681907/countries_search_w0oh7k.jpg',
+    title: 'Countries Search',
+    description:
+      'Get a country by an API based dynamic web application that generates a list of countries based on the user input',
+    websiteUrl: 'https://vgpcout3search.ccbp.tech',
+  },
+  {
+    project: 15,
+    category: 'DYNAMIC',
+    categoryId: 'ALL',
+    imageUrl:
+      'https://res.cloudinary.com/dxs4gnnbs/image/upload/v1720682265/bookmark_nnmxb3.png',
+    title: 'Bookmark Maker',
+    description: 'Book Your Favorite Sites',
+    websiteUrl: 'https://vgpbookmark.ccbp.tech',
+  },
+  {
+    projectId: 16,
+    category: 'DYNAMIC',
+    categoryId: 'ALL',
     imageUrl: 'https://assets.ccbp.in/frontend/react-js/projects-d3-img.png',
     title: 'Speed Typing Test',
     description:
@@ -143,7 +186,7 @@ const projectsList = [
     websiteUrl: 'https://vgptypingspeed.ccbp.tech',
   },
   {
-    projectId: 13,
+    projectId: 17,
     category: 'DYNAMIC',
     categoryId: 'ALL',
     imageUrl: 'https://assets.ccbp.in/frontend/react-js/projects-d1-img.png',
@@ -153,7 +196,7 @@ const projectsList = [
     websiteUrl: 'https://vgprandomjoke.ccbp.tech',
   },
   {
-    projectId: 14,
+    projectId: 18,
     category: 'DYNAMIC',
     categoryId: 'ALL',
     imageUrl: 'https://assets.ccbp.in/frontend/react-js/projects-d2-img.png',
@@ -163,7 +206,7 @@ const projectsList = [
     websiteUrl: 'https://vgpimagesizing.ccbp.tech',
   },
   {
-    projectId: 15,
+    projectId: 19,
     category: 'DYNAMIC',
     categoryId: 'ALL',
     imageUrl:
@@ -172,6 +215,37 @@ const projectsList = [
     description:
       'Get a random books by an API based dynamic Web Application that generates a list of popular books based on country',
     websiteUrl: 'https://vgplibrarymana.ccbp.tech',
+  },
+  {
+    projectId: 20,
+    category: 'DYNAMIC',
+    categoryId: 'ALL',
+    imageUrl:
+      'https://res.cloudinary.com/dxs4gnnbs/image/upload/v1720680420/chatbotiamge_cfxmmm.jpg',
+    title: 'Chatbot',
+    description: 'Be a friendly interact with our chatbot.',
+    websiteUrl: 'https://vgpchatbotapp.ccbp.tech',
+  },
+  {
+    projectId: 21,
+    category: 'DYNAMIC',
+    categoryId: 'ALL',
+    imageUrl:
+      'https://res.cloudinary.com/dxs4gnnbs/image/upload/v1720680320/sandtimerimage_kpepdx.jpg',
+    title: 'Peace Timer',
+    description: 'Relax a bit with our user friendly peace timer website',
+    websiteUrl: 'https://vgppeacetimer.ccbp.tech',
+  },
+  {
+    project: 22,
+    category: 'DYNAMIC',
+    categoryId: 'ALL',
+    imageUrl:
+      'https://assets.ccbp.in/frontend/dynamic-webapps/time-converter-bg.png',
+    title: 'Time Converter',
+    description:
+      'Enter hours and minutes values to convert into seconds with our time converter website',
+    websiteUrl: 'https://vgptimeconvert.ccbp.tech',
   },
 ]
 
