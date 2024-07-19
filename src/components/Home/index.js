@@ -12,7 +12,9 @@ const Home = () => (
         <h1 className="navbar-heading">
           Hey, I am <span style={{color: '#4b6cc1'}}>Vamshi Gundepangu</span>
         </h1>
-        <p className="navbar-paragraph"> I am a Fullstack Developer & Mentor</p>
+
+        <p className="navbar-paragraph"> I am a </p>
+        <p className="my-name-heading">Fullstack Developer</p>
         <button type="button" className="navbar-button">
           Contact Me
         </button>

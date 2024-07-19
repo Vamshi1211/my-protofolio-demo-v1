@@ -15,8 +15,8 @@ const ProjectItem = props => {
         <p className="project_card__description">{eachProject.description}</p>
         {eachProject.category === 'REACT' && (
           <>
-            <p className="project_card__description">username: rahul</p>
-            <p className="project_card__description">password: rahul@2021</p>
+            <p className="project_card_username">username: rahul</p>
+            <p className="project_card_password">password: rahul@2021</p>
           </>
         )}
         <a
@@ -25,9 +25,6 @@ const ProjectItem = props => {
           className="project_card__button"
         >
           Live Demo
-        </a>
-        <a href="#skills" className="project_card__button secondary">
-          Source Code
         </a>
       </div>
     </li>

@@ -28,6 +28,7 @@ const Header = () => {
               src="https://res.cloudinary.com/dxs4gnnbs/image/upload/v1720699345/Your_paragraph_text_wrbl1a.png"
               className="navbar-icon"
               alt="nav logo"
+              loading="lazy"
             />
           </AnchorLink>
           <ul className="desktop-nav-items">

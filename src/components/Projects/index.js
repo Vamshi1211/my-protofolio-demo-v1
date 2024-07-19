@@ -49,11 +49,11 @@ const projectsList = [
     category: 'REACT',
     categoryId: 'ALL',
     imageUrl:
-      'https://res.cloudinary.com/dxs4gnnbs/image/upload/v1720725106/cowin-logo_bczhiy.png',
-    title: 'Cowin Dashboard',
+      'https://assets.ccbp.in/frontend/react-js/nxt-watch-logo-dark-theme-img.png',
+    title: 'NxtWatch App',
     description:
-      'Implemented Cowin Dashboard by using the third party package recharts and can see the fetched data from API call',
-    websiteUrl: 'https://vpgcowindata.ccbp.tech',
+      'Implemented NxtWatch application which is a clone for Youtube where users can login and see the list of videos, change theme, saved videos, etc...',
+    websiteUrl: 'https://vgpnxtwatch.ccbp.tech',
   },
   {
     projectId: 0,
@@ -106,7 +106,7 @@ const projectsList = [
     websiteUrl: 'https://vgpcricwebsite.ccbp.tech',
   },
   {
-    id: 5,
+    projectId: 5,
     category: 'STATIC',
     categoryId: 'ALL',
     imageUrl:
@@ -188,7 +188,7 @@ const projectsList = [
     websiteUrl: 'https://vgptodosapp.ccbp.tech',
   },
   {
-    project: 13,
+    projectId: 13,
     category: 'DYNAMIC',
     categoryId: 'ALL',
     imageUrl:
@@ -199,7 +199,7 @@ const projectsList = [
     websiteUrl: 'https://vgpwikisearch.ccbp.tech',
   },
   {
-    project: 14,
+    projectId: 14,
     category: 'DYNAMIC',
     categoryId: 'ALL',
     imageUrl:
@@ -210,7 +210,7 @@ const projectsList = [
     websiteUrl: 'https://vgpcout3search.ccbp.tech',
   },
   {
-    project: 15,
+    projectId: 15,
     category: 'DYNAMIC',
     categoryId: 'ALL',
     imageUrl:
@@ -303,14 +303,15 @@ const projectsList = [
 class App extends Component {
   state = {
     categoryId: categoriesList[0].id,
+    offSetValue: 0,
   }
 
   onChangeSelect = event => {
-    this.setState({categoryId: event.target.value})
+    this.setState({categoryId: event.target.value, offSetValue: 0})
   }
 
   render() {
-    const {categoryId} = this.state
+    const {categoryId, offSetValue} = this.state
 
     const filteredData = projectsList.filter(
       eachItem =>
@@ -330,7 +331,11 @@ class App extends Component {
                 </option>
               ))}
             </select>
-            <PaginationPage itemsPerPage={4} projects={filteredData} />
+            <PaginationPage
+              itemsPerPage={4}
+              projects={filteredData}
+              offSetValue={offSetValue}
+            />
           </div>
         </div>
       </div>
